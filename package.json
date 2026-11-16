@@ -1,1 +1,9 @@
+{
+  "name": "domain-one",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo \"Building project...\"",
+    "test": "echo \"Running tests...\""
+  }
+}
 

@@ -1,9 +1,9 @@
 name: push-events
 on: 
-  push:
-    branches:
-    - main
-    - test
+  schedule:
+    - cron: '*/5 * * * *' 
+   
+   
 jobs:
   show-events: 
     runs-on: ubuntu-latest

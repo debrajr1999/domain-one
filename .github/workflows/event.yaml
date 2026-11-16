@@ -1,6 +1,11 @@
 name: Manual-wkflw
 on: 
   workflow_dispatch:
+    inputs:
+      param1:
+        description: 'desc for p1'
+        required: true
+        default: 'hellow-world'
    
    
    
@@ -10,6 +15,6 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-      - name: Info
+      - name: run manual task
         run: | 
-          echo "running manual task"
+          echo "running manual task with param1 ${{github.event.inputs.param1}}

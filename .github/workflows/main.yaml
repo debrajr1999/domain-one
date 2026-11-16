@@ -10,6 +10,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
            node-version: 14
+      - name: Run install
+        run: npm install
       - name: install dependemncies
         run: npm ci
       - name: build
@@ -23,7 +25,9 @@ jobs:
       - name: setup node.js
         uses: actions/setup-node@v4   
         with:
-           node-version: 14  
+           node-version: 14
+      - name: Run install
+        run: npm install
       - name: install dependemncies
         run: npm ci
       - name: run test
